@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://burubon-hub.github.io/namae-uranai/sitemap.xml
