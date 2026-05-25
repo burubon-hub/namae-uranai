@@ -3,12 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ååå ããç¡æãããªãã®ååãæã¤éå¢ãè¨ºæ­</title>
-<meta name="description" content="ååãå¥åããã ãã§ç·åéã»ææéã»ééã»åå¼·éãç¡æè¨ºæ­ãã©ãã­ã¼ã«ã©ã¼ãã©ãã­ã¼ãã³ãã¼ãåããååå ããã¼ã«ãåéã®ååãè©¦ãã¦SNSã§ã·ã§ã¢ãããã">
-<meta name="keywords" content="ååå ã,ç¡æ,éå¢,ææé,éé,ååè¨ºæ­,å§åå¤æ­,ã©ãã­ã¼ã«ã©ã¼">
+<title>名前占い【無料】あなたの名前が持つ運勢を診断</title>
+<meta name="description" content="名前を入力するだけで総合運・恋愛運・金運・勉強運を無料診断。ラッキーカラーやラッキーナンバーも分かる名前占いツール。友達の名前も試してSNSでシェアしよう。">
+<meta name="keywords" content="名前占い,無料,運勢,恋愛運,金運,名前診断,姓名判断,ラッキーカラー">
 <link rel="canonical" href="https://burubon-hub.github.io/namae-uranai/">
-<meta property="og:title" content="ååå ããç¡æãããªãã®ååãæã¤éå¢ãè¨ºæ­">
-<meta property="og:description" content="ååãå¥åããã ãã§ç·åéã»ææéã»ééã»åå¼·éãç¡æè¨ºæ­ï¼">
+<meta property="og:title" content="名前占い【無料】あなたの名前が持つ運勢を診断">
+<meta property="og:description" content="名前を入力するだけで総合運・恋愛運・金運・勉強運を無料診断！">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://burubon-hub.github.io/namae-uranai/">
 <meta name="twitter:card" content="summary">
@@ -16,8 +16,8 @@
 {
   "@context": "https://schema.org",
   "@type": "WebApplication",
-  "name": "ååå ã",
-  "description": "ååãå¥åããã ãã§ç·åéã»ææéã»ééã»åå¼·éãç¡æè¨ºæ­ã§ãããã¼ã«ã",
+  "name": "名前占い",
+  "description": "名前を入力するだけで総合運・恋愛運・金運・勉強運を無料診断できるツール。",
   "url": "https://burubon-hub.github.io/namae-uranai/",
   "applicationCategory": "EntertainmentApplication",
   "operatingSystem": "Any",
@@ -122,7 +122,7 @@ input[type="text"]:focus { border-color: #c9a8ff; background: rgba(255,255,255,0
 
 .uranai-btn:active { transform: scale(0.98); }
 
-/* çµæã¨ãªã¢ */
+/* 結果エリア */
 .result { display: none; }
 
 .result-header {
@@ -142,7 +142,7 @@ input[type="text"]:focus { border-color: #c9a8ff; background: rgba(255,255,255,0
 
 .result-subtitle { font-size: 13px; color: #c9a8ff; }
 
-/* ç·åé */
+/* 総合運 */
 .sogo-card {
   background: linear-gradient(135deg, rgba(155,89,182,0.3), rgba(233,30,140,0.3));
   border: 1px solid rgba(255,255,255,0.2);
@@ -170,7 +170,7 @@ input[type="text"]:focus { border-color: #c9a8ff; background: rgba(255,255,255,0
 
 .sogo-message { font-size: 14px; color: #e0d0ff; line-height: 1.6; }
 
-/* éå¢ã°ãªãã */
+/* 運勢グリッド */
 .fortune-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -190,7 +190,7 @@ input[type="text"]:focus { border-color: #c9a8ff; background: rgba(255,255,255,0
 .fortune-item .f-label { font-size: 11px; color: #c9a8ff; margin-bottom: 8px; letter-spacing: 0.05em; }
 .fortune-item .f-stars { font-size: 16px; letter-spacing: 2px; }
 
-/* ã©ãã­ã¼ */
+/* ラッキー */
 .lucky-card {
   background: rgba(255,255,255,0.07);
   border: 1px solid rgba(255,255,255,0.12);
@@ -219,7 +219,7 @@ input[type="text"]:focus { border-color: #c9a8ff; background: rgba(255,255,255,0
   border: 2px solid rgba(255,255,255,0.3);
 }
 
-/* ä¸è¬ã¡ãã»ã¼ã¸ */
+/* 一言メッセージ */
 .message-card {
   background: linear-gradient(135deg, rgba(255,215,0,0.1), rgba(255,107,53,0.1));
   border: 1px solid rgba(255,215,0,0.3);
@@ -232,7 +232,7 @@ input[type="text"]:focus { border-color: #c9a8ff; background: rgba(255,255,255,0
 .message-card .m-label { font-size: 12px; color: #ffd700; letter-spacing: 0.1em; margin-bottom: 10px; }
 .message-card .m-text { font-size: 15px; color: #fff; line-height: 1.7; font-weight: 500; }
 
-/* ã·ã§ã¢ãã¿ã³ */
+/* シェアボタン */
 .share-wrap { display: flex; gap: 10px; margin-bottom: 24px; }
 
 .share-btn {
@@ -251,7 +251,7 @@ input[type="text"]:focus { border-color: #c9a8ff; background: rgba(255,255,255,0
 .btn-twitter { background: #1da1f2; color: #fff; }
 .btn-copy { background: rgba(255,255,255,0.15); color: #fff; border: 1px solid rgba(255,255,255,0.2); }
 
-/* ããä¸åº¦ */
+/* もう一度 */
 .retry-btn {
   width: 100%;
   padding: 14px;
@@ -284,7 +284,7 @@ input[type="text"]:focus { border-color: #c9a8ff; background: rgba(255,255,255,0
 
 footer { text-align: center; padding: 0 0 24px; font-size: 11px; color: rgba(255,255,255,0.3); }
 
-/* ã¢ãã¡ã¼ã·ã§ã³ */
+/* アニメーション */
 @keyframes fadeInUp {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
@@ -301,303 +301,292 @@ footer { text-align: center; padding: 0 0 24px; font-size: 11px; color: rgba(255
 <body>
 <div class="container">
   <header>
-    <div class="stars-deco">â¦ â§ â¦ â§ â¦</div>
-    <h1>ååå ã</h1>
-    <p>ããªãã®ååãæã¤éå½ãç¡æè¨ºæ­</p>
+    <div class="stars-deco">✦ ✧ ✦ ✧ ✦</div>
+    <h1>名前占い</h1>
+    <p>あなたの名前が持つ運命を無料診断</p>
   </header>
 
-  <!-- å¥å -->
+  <!-- 入力 -->
   <div class="input-card">
-    <h2>â¨ å ãããååãå¥å</h2>
+    <h2>✨ 占いたい名前を入力</h2>
     <div class="name-input-wrap">
-      <input type="text" id="nameInput" placeholder="ä¾ï¼ããã" maxlength="20" oninput="clearResult()">
+      <input type="text" id="nameInput" placeholder="例：たろう" maxlength="20" oninput="clearResult()">
     </div>
-    <button class="uranai-btn" onclick="uranai()">ð® å ã</button>
+    <button class="uranai-btn" onclick="uranai()">🔮 占う</button>
   </div>
 
-  <!-- çµæ -->
+  <!-- 結果 -->
   <div class="result" id="result">
     <div class="result-header">
       <div class="result-name" id="resultName"></div>
-      <div class="result-subtitle">ã®éå¢è¨ºæ­çµæ</div>
+      <div class="result-subtitle">の運勢診断結果</div>
     </div>
 
-    <!-- ç·åé -->
+    <!-- 総合運 -->
     <div class="sogo-card animate">
-      <div class="sogo-label">â¦ ç· å é â¦</div>
+      <div class="sogo-label">✦ 総 合 運 ✦</div>
       <div class="sogo-rank" id="sogoRank"></div>
       <div class="sogo-message" id="sogoMessage"></div>
     </div>
 
-    <!-- 4éå¢ -->
+    <!-- 4運勢 -->
     <div class="fortune-grid">
       <div class="fortune-item animate">
-        <div class="f-icon">ð</div>
-        <div class="f-label">æ æ é</div>
+        <div class="f-icon">💕</div>
+        <div class="f-label">恋 愛 運</div>
         <div class="f-stars" id="renaiStars"></div>
       </div>
       <div class="fortune-item animate">
-        <div class="f-icon">ð°</div>
-        <div class="f-label">é é</div>
+        <div class="f-icon">💰</div>
+        <div class="f-label">金 運</div>
         <div class="f-stars" id="kinStars"></div>
       </div>
       <div class="fortune-item animate">
-        <div class="f-icon">ð</div>
-        <div class="f-label">å å¼· é</div>
-      2 <div class="f-stars" id="benkyoStars"></div>
+        <div class="f-icon">📚</div>
+        <div class="f-label">勉 強 運</div>
+        <div class="f-stars" id="benkyoStars"></div>
       </div>
       <div class="fortune-item animate">
-        <div class="f-icon">ð</div>
-        <div class="f-label">å¥ åº· é</div>
+        <div class="f-icon">🍀</div>
+        <div class="f-label">健 康 運</div>
         <div class="f-stars" id="kenkoStars"></div>
       </div>
     </div>
 
-    <!-- ã©ãã­ã¼ -->
+    <!-- ラッキー -->
     <div class="lucky-card animate">
-      <h3>ð LUCKY ITEMS</h3>
+      <h3>🌟 LUCKY ITEMS</h3>
       <div class="lucky-grid">
         <div class="lucky-item">
-          <div class="l-label">ã©ãã­ã¼ã«ã©ã¼</div>
+          <div class="l-label">ラッキーカラー</div>
           <div class="color-swatch" id="luckyColorSwatch"></div>
           <div class="l-value" id="luckyColor"></div>
         </div>
         <div class="lucky-item">
-          <div class="l-label">ã©ãã­ã¼ãã³ãã¼</div>
+          <div class="l-label">ラッキーナンバー</div>
           <div class="l-value" style="font-size:28px;margin-top:6px;" id="luckyNumber"></div>
         </div>
         <div class="lucky-item">
-          <div class="l-label">ã©ãã­ã¼ã¢ã¤ãã </div>
+          <div class="l-label">ラッキーアイテム</div>
           <div class="l-value" style="font-size:22px;margin-top:6px;" id="luckyItem"></div>
         </div>
       </div>
     </div>
 
-    <!-- ä¸è¨ã¡ãã»ã¼ã¸ -->
+    <!-- 一言メッセージ -->
     <div class="message-card animate">
-      <div class="m-label">â¦ ä»æ¥ã®ã¡ãã»ã¼ã¸ â¦</div>
+      <div class="m-label">✦ 今日のメッセージ ✦</div>
       <div class="m-text" id="luckyMessage"></div>
     </div>
 
-    <!-- ã·ã§ã¢ -->
+    <!-- シェア -->
     <div class="share-wrap">
-      <button class="share-btn btn-twitter" onclick="shareTwitter()">ð ã·ã§ã¢ãã</button>
-      <button class="share-btn btn-copy" onclick="copyResult()" id="copyBtn">ð URLãã³ãã¼</button>
+      <button class="share-btn btn-twitter" onclick="shareTwitter()">𝕏 シェアする</button>
+      <button class="share-btn btn-copy" onclick="copyResult()" id="copyBtn">🔗 URLをコピー</button>
     </div>
 
-    <button class="retry-btn" onclick="resetForm()">â© å¥ã®ååãå ã</button>
+    <button class="retry-btn" onclick="resetForm()">↩ 別の名前を占う</button>
   </div>
 
   <!-- FAQ -->
   <div class="faq-card">
-    <h2>ããããè³ªå</h2>
+    <h2>よくある質問</h2>
     <dl>
       <div class="faq-item">
-        <dt>Q. åãååãªãæ¯ååãçµæãåºã¾ããï¼</dt>
-        <dd>ã¯ããååã®æå­ããè¨ç®ãããããåãååã¯å¸¸ã«åãçµæã«ãªãã¾ããåéã®ååãå ãã¾ãã</dd>
+        <dt>Q. 同じ名前なら毎回同じ結果が出ますか？</dt>
+        <dd>はい。名前の文字から計算するため、同じ名前は常に同じ結果になります。友達の名前も占えます。</dd>
       </div>
       <div class="faq-item">
-        <dt>Q. å§ï¼åå­ï¼ã ãã»ååã ãã§ãå ãã¾ããï¼</dt>
-        <dd>ã©ã¡ãã§ãå ãã¾ãããã«ãã¼ã ã§å¥åããã¨ããè©³ç´°ãªè¨ºæ­ãã§ãã¾ãã</dd>
+        <dt>Q. 姓（名字）だけ・名前だけでも占えますか？</dt>
+        <dd>どちらでも占えます。フルネームで入力するとより詳細な診断ができます。</dd>
       </div>
       <div class="faq-item">
-        <dt>Q. ã²ãããªã»ã«ã¿ã«ãã»æ¼¢å­ãã©ãã§å¥åããã°ããã§ãã¯¾ò|ð½Ðø(ñû§»Z¶_
-6#ûg_3
-77£3
-ÿ·
-7£3«¦;7¿"»ÖCzs¯«
-+ûgð½ø(ð½¥Øø(ð½°ø(ð½¥Øø((ñ½½ÑÈûïO»6¿¢¿÷n»jgÖCzs
-Kþw¢¢óg
-/
-»¿
-+ûo
-Oð½½½ÑÈø(ð½¥Øø((ñÍÉ¥ÁÐø(¼¼´´´ó
-ÿºkú¤´´´)½¹ÍÐÉ¹­Ìôl(ì¹µèB$°±ÌèÉ¹¬µ¥­¥¡¤°µÍÍÌèl(«»B7&7¯¿òß'3ºÿûgî+Ow7«â¶§
-K¢â?ÿëgfF£
-+»êë3«»¦¶*o¯òW7¾o
-'
-3
-/_
-°(B7&73ëg
-#¯«¯¿&ç"«
-£7¯
-»ó3
-+ûgÏ
-ç»Î¯æ_
-K>ûº¯_7û_
-°(ÒfÓ
-'_¦/Â_3«
-K2
-Oûg¢«þ
-K2¢3.Wg
-/O£ê#Ïîâ+»ÖCzs3úûg(uô°(ì¹µèâ·B$°±ÌèÉ¹¬µ¡Õ­¥¡¤°µÍÍÌèl(«»B7&7¿º'ºk_æã¦/
-K2ûg
-Ï
-Ï£¦7ÿ¦7·*«*o3î+ë/«ö¯«7ûg°(vº¯&7¦Ëg
-/«B7&7»2¦?
-/«*o3¢&¿â£æã¦/
-KòW7¾oûg
-'k¦Ëÿû_
-°(C§Ï
-ç»>[
-3¦/Â_gêë£»æ/3
-+
-K"¯g
-/O£W
-'¯¦/3¦Z/G?_
-(uô°(ì¹µèB$°±ÌèÉ¹¬µ­¥¡¤°µÍÍÌèl(«»B7&7¯¿¢ªºW£â§/W3ºÿûgw»¦¶*o3F£nË
-Kß£Wo¢&¿â
-KòW7¾oûg°(¦?
-/ë/«æã¦/3
-+ûg^âã»Â?W«æão¯Â_?O£
-#
-+¢Æ+/«¾;^¯«
-/_
-°(B7&7»*o3«
-Kº#ûgÒnÓ«Â_2¢3.Wg
-/O£¢&¿O£3²£¢Öß7
-/_
-(uô°(ì¹µèÂ?B$°±ÌèÉ¹¬µÍ¡½­¥¡¤°µÍÍÌèl(Â?W«æã¦/3¦7ÿ¦7«
-/¦/Â_g
-'k¯ââ
-Kâ¾¯O«gO£7«"Czs¯«3
-+ûg°(c?
-+£º*o
-K¢N#
-/frB7&7»2«
-/*o
-Kþc¢«"
-'_?
-/O£3¦Z/¦/»¦6×g°(rÃ¦O«*«*o3º
-KÖCÛê#F£
-+ã»¢²w
-Kþc
-3k¯
-/O£w
-?³¢&¿O3¢"{¢úóÿûg(uô°(ì¹µèr¯B$°±ÌèÉ¹¬µÍÕ­¥¡¤°µÍÍÌèl(î+¿ê[
-gr¦ZOB7&7»2ösr£j«*o3î+ú3
-?
-+£¦Z/¢*Ç_7ûgî+»¦Gò×
-+¿þkÇ
-?
-3ûg°(O
-3/
-'¦/Â_3â+b_?ê#3
-+ûgZÃ_O£ã»2G"
-KC
-3k¯â¶§¢â?ÿë_ÿû_
-°(
-'k{
-kó
-ç¦Ë
-O£3¦Z/¦/»w
-Ï#«»B7&732¢ªºW3k
-37«º
-KÖCÏûg(uô°(ì¹µèØ°±ÌèÉ¹¬µ­å¼°µÍÍÌèl(ÂG_®/¶û¢#
-/fr/
-_
-3ûo
-O
-B7&7»*o¿«»FÏZç;¦7¯¢3.Wg
-/O£¦O¿¦Z/Gûg°(¢¦ÞÓ»fg3w
-3¿«3"C¦Vßg
-/
-»
-ç_B7&7»2òßW
-Kþc&7
-KBG7û_
-°(î+¿¢C#
-/fB¯.W/k¢.ÇÂ_
-K¦+O£3"gÖC»ú3¯¿þkfÓ
-3¦ZO3¢¢«
-3ûg(uô)tì()½¹ÍÐ±Õ­å
-½±½ÉÌôl(ì¹µè
-Óó¯$°¡àèÜÀÀô°(ì¹µè§gÏð°¡àèåáô°(ì¹µè
-×
-¿¤°¡àèÝÔô°(ì¹µèÏ °¡àèäáÑäô°(ì¹µè
-ç
-¯
-[¯ð°¡àèàÝô°(ì¹µè
-Ïó§¬°¡àèÝÝô°(ì¹µè
-×Ï
-ï °¡àèáÐÈô°(ì¹µè
-£§¯$°¡àèÔÁàÜàô°(ì¹µè·ó
-h°¡àèáÁô°(ì¹µè
-Ï
-
-Ð°¡àèáÙàô°)tì()½¹ÍÐ±Õ­å%ÑµÌôlÂ~2à°¶@°Â~6 °Â~2d°Â~J8°Â~RD°Â~2è°Â~,°Â~2 °Â~:¼°Â~>°Â~:,°Â~2|°Â~J¬°Â~: tì()½¹ÍÐµÍÍÌôl(«»²G¦S3F£
-+»êë
-Kæão¯g
-/*o
-K2ûg°(î+^¿nÓ
-Kþc«»²³·3¶_¦O
-Kë_?
-3ûg°(Â?W«¢«"37«â
-KR
-^êë¯«_?g
-/O£¦/Â_3
-__ûg°(³Ï
-ãg
-/.Â_
-K2û_
-ÇV_
-KC
-3«þ3¦Z/¦/»¦6×g°(¢²w»Â_2
-Kþc
-3k¯
-+3£»¢¢¢F'3æã¦/
-KòW7¾oûg°(ZÃ_ëòk¯rú_òGê«â3gCwOûvûg°(¢«"
-Kþc
-/*o3«»¶f£¢«þ
-K2â¶§¢â?ÿë_û_
-°(òG
-O£
-"«¦Z/¦/¢3.Wþ£öO
-KVÓ#
-/O£¦/Â_3VÓûg°(÷þ
-K"¯¢"#FÏ
-K2O£¯¦7×j¯¦oÏ¢úó
-Oÿû_
-°(«»/3¢òw?^¢«"
-'_?
-/O£3r»¦¶*o¯«
-+ûg°)tì((¼¼´´´?
-ß¦ZVÃ¾ò#B7&7/
-'º'ºk_VÃ
-KR"C¾ò$´´´)Õ¹Ñ¥½¸¡Í¡9µ¡¹µ¤ì(±Ð ôÀì(½È¡±Ð¤ôÀì¤ð¹µ¹±¹Ñ ì¤¬¬¤ì( ô5Ñ ¹¥µÕ° ÌÄ° ¤¬¹µ¹¡É
-½Ð¡¤¤ðÀì(ô(ÉÑÕÉ¸5Ñ ¹Ì¡ ¤ì)ô()Õ¹Ñ¥½¸ÍI¹¡Í°µà¤ì(±ÐÌô¡Í¨ÄØØÐÔÈÔ¬ÄÀÄÌäÀÐÈÈÌ¤Ááì(ÉÑÕÉ¸5Ñ ¹Ì¡Ì¤µàì)ô()Õ¹Ñ¥½¸ÍÑÉÍ!Ñµ°¡¸¤ì(ÉÑÕÉ¸b¹ÉÁÐ¡¸¤¬b¹ÉÁÐ Ô´¸¤ì)ô((¼¼´´´6º¢0´´´)Õ¹Ñ¥½¸ÕÉ¹¤ ¤ì(½¹ÍÐ¹µô½Õµ¹Ð¹Ñ±µ¹Ñ	å% ¹µ%¹ÁÕÐ¤¹Ù±Õ¹ÑÉ¥´ ¤ì(¥ ¹µ¤ì(½Õµ¹Ð¹Ñ±µ¹Ñ	å% ¹µ%¹ÁÕÐ¤¹½ÕÌ ¤ì(½Õµ¹Ð¹Ñ±µ¹Ñ	å% ¹µ%¹ÁÕÐ¤¹ÍÑå±¹½ÉÉ
-½±½ÈôäÅáì(ÍÑQ¥µ½ÕÐ  ¤ôøì½Õµ¹Ð¹Ñ±µ¹Ñ	å% ¹µ%¹ÁÕÐ¤¹ÍÑå±¹½ÉÉ
-½±½Èôìô°ÄÀÀÀ¤ì(ÉÑÕÉ¸ì(ô((½¹ÍÐ ô¡Í¡9µ¡¹µ¤ì((¼¼Þ?B#¦/¾ò Ûº×¦j;¾ò$(½¹ÍÐÉ¹­%àôÍI¹¡ °Ø¤ì(½¹ÍÐÉ¹¬ôÉ¹­ÍmÉ¹­%átì(½¹ÍÐµÍ%àôÍI¹¡ ¬Ä°É¹¬¹µÍÍÌ¹±¹Ñ ¤ì((¼¼B¦/.¾ò Çp×b¾ò$(½¹ÍÐÉ¹¤ô¡ÍI¹¡ ¬ÄÀ°Ô¤¬Ä¤ì(½¹ÍÐ­¥¸ô¡ÍI¹¡ ¬ÈÀ°Ô¤¬Ä¤ì(½¹ÍÐ¹­å¼ô¡ÍI¹¡ ¬ÌÀ°Ô¤¬Ä¤ì(½¹ÍÐ­¹­¼ô¡ÍI¹¡ ¬ÐÀ°Ô¤¬Ä¤ì((¼¼§
-·ð(½¹ÍÐ½±½Èô±Õ­å
-½±½ÉÍmÍI¹¡ ¬ÔÀ°±Õ­å
-½±½ÉÌ¹±¹Ñ ¥tì(½¹ÍÐ¹ÕµÈôÍI¹¡ ¬ØÀ°ä¤¬Äì(½¹ÍÐ¥Ñ´ô±Õ­å%ÑµÍmÍI¹¡ ¬ÜÀ°±Õ­å%ÑµÌ¹±¹Ñ ¥tì(½¹ÍÐ±Õ­å5ÍôµÍÍÍmÍI¹¡ ¬àÀ°µÍÍÌ¹±¹Ñ ¥tì((¼¼ÖCzs
-K¢£è(½Õµ¹Ð¹Ñ±µ¹Ñ	å% ÉÍÕ±Ñ9µ¤¹ÑáÑ
-½¹Ñ¹Ðô¹µì(½Õµ¹Ð¹Ñ±µ¹Ñ	å% Í½½I¹¬¤¹¥¹¹É!Q50ôñÍÁ¸±ÍÌôíÉ¹¬¹±ÍôøíÉ¹¬¹¹µôð½ÍÁ¸ùì(½Õµ¹Ð¹Ñ±µ¹Ñ	å% Í½½5ÍÍ¤¹ÑáÑ
-½¹Ñ¹ÐôÉ¹¬¹µÍÍÍmµÍ%átì(½Õµ¹Ð¹Ñ±µ¹Ñ	å% É¹¥MÑÉÌ¤¹ÑáÑ
-½¹Ñ¹ÐôÍÑÉÍ!Ñµ°¡É¹¤¤ì(½Õµ¹Ð¹Ñ±µ¹Ñ	å% ­¥¹MÑÉÌ¤¹ÑáÑ
-½¹Ñ¹ÐôÍÑÉÍ!Ñµ°¡­¥¸¤ì(½Õµ¹Ð¹Ñ±µ¹Ñ	å% ¹­å½MÑÉÌ¤¹ÑáÑ
-½¹Ñ¹ÐôÍÑÉÍ!Ñµ°¡¹­å¼¤ì(½Õµ¹Ð¹Ñ±µ¹Ñ	å% ­¹­½MÑÉÌ¤¹ÑáÑ
-½¹Ñ¹ÐôÍÑÉÍ!Ñµ°¡­¹­¼¤ì(½Õµ¹Ð¹Ñ±µ¹Ñ	å% ±Õ­å
-½±½ÉMÝÑ ¤¹ÍÑå±¹­É½Õ¹ô½±½È¹¡àì(½Õµ¹Ð¹Ñ±µ¹Ñ	å% ±Õ­å
-½±½È¤¹ÑáÑ
-½¹Ñ¹Ðô½±½È¹¹µì(½Õµ¹Ð¹Ñ±µ¹Ñ	å% ±Õ­å9ÕµÈ¤¹ÑáÑ
-½¹Ñ¹Ðô¹ÕµÈì(½Õµ¹Ð¹Ñ±µ¹Ñ	å% ±Õ­å%Ñ´¤¹ÑáÑ
-½¹Ñ¹Ðô¥Ñ´ì(½Õµ¹Ð¹Ñ±µ¹Ñ	å% ±Õ­å5ÍÍ¤¹ÑáÑ
-½¹Ñ¹Ðô±Õ­å5Íì((¼¼UI3¯G§ó
-ÿ
-K¢þ÷*¾ò#
-ß
-
-R£¾ò$(½¹ÍÐÕÉ°ô¹ÜUI0¡Ý¥¹½Ü¹±½Ñ¥½¸¹¡É¤ì(ÕÉ°¹ÍÉ¡AÉµÌ¹ÍÐ ¹µ°¹µ¤ì(Ý¥¹½Ü¹¡¥ÍÑ½Éä¹ÉÁ±MÑÑ¡íô°°ÕÉ°¤ì((½Õµ¹Ð¹Ñ±µ¹Ñ	å% ÉÍÕ±Ð¤¹ÍÑå±¹¥ÍÁ±äô±½¬ì(½Õµ¹Ð¹Ñ±µ¹Ñ	å% ÉÍÕ±Ð¤¹ÍÉ½±±%¹Ñ½Y¥Ü¡ì¡Ù¥½ÈèÍµ½½Ñ °±½¬èÍÑÉÐô¤ì)ô()Õ¹Ñ¥½¸±ÉIÍÕ±Ð ¤ì(½Õµ¹Ð¹Ñ±µ¹Ñ	å% ¹µ%¹ÁÕÐ¤¹ÍÑå±¹½ÉÉ
-½±½Èôì)ô()Õ¹Ñ¥½¸ÉÍÑ½É´ ¤ì(½Õµ¹Ð¹Ñ±µ¹Ñ	å% ÉÍÕ±Ð¤¹ÍÑå±¹¥ÍÁ±äô¹½¹ì(½Õµ¹Ð¹Ñ±µ¹Ñ	å% ¹µ%¹ÁÕÐ¤¹Ù±Õôì(Ý¥¹½Ü¹ÍÉ½±±Q¼¡ìÑ½ÀèÀ°¡Ù¥½ÈèÍµ½½Ñ ô¤ì(½¹ÍÐÕÉ°ô¹ÜUI0¡Ý¥¹½Ü¹±½Ñ¥½¸¹¡É¤ì(ÕÉ°¹ÍÉ¡AÉµÌ¹±Ñ ¹µ¤ì(Ý¥¹½Ü¹¡¥ÍÑ½Éä¹ÉÁ±MÑÑ¡íô°°ÕÉ°¤ì)ô()Õ¹Ñ¥½¸Í¡ÉQÝ¥ÑÑÈ ¤ì(½¹ÍÐ¹µô½Õµ¹Ð¹Ñ±µ¹Ñ	å% ÉÍÕ±Ñ9µ¤¹ÑáÑ
-½¹Ñ¹Ðì(½¹ÍÐÉ¹¬ô½Õµ¹Ð¹Ñ±µ¹Ñ	å% Í½½I¹¬¤¹ÑáÑ
-½¹Ñ¹Ðì(½¹ÍÐÕÉ°ôÝ¥¹½Ü¹±½Ñ¥½¸¹¡Éì(½¹ÍÐÑáÐôCB7&76G0í¹µ÷7»Þ?B#¦/¿0íÉ¹­÷7_¾òq»«»B7&7
-6ÿÂ~Fq¸íÕÉ±õì(Ý¥¹½Ü¹½Á¸ ¡ÑÑÁÌè¼½ÑÝ¥ÑÑÈ¹½´½¥¹Ñ¹Ð½ÑÝÐýÑáÐô¬¹½UI%
-½µÁ½¹¹Ð¡ÑáÐ¤°}±¹¬¤ì)ô()Õ¹Ñ¥½¸½ÁåIÍÕ±Ð ¤ì(¹Ù¥Ñ½È¹±¥Á½É¹ÝÉ¥ÑQáÐ¡Ý¥¹½Ü¹±½Ñ¥½¸¹¡É¤¹Ñ¡¸  ¤ôøì(½¹ÍÐÑ¸ô½Õµ¹Ð¹Ñ±µ¹Ñ	å% ½Áå	Ñ¸¤ì(Ñ¸¹ÑáÑ
-½¹Ñ¹Ðôr
-ÏSó_û_|ì(ÍÑQ¥µ½ÕÐ  ¤ôøìÑ¸¹ÑáÑ
-½¹Ñ¹ÐôÂ~R\UI3
-K
-ÏSðìô°ÈÀÀÀ¤ì(ô¤ì)ô((¼¼UI3G§ó
-ÿ/
-'¢«.Wº¢0)Ý¥¹½Ü¹Ù¹Ñ1¥ÍÑ¹È ±½° ¤ôøì(½¹ÍÐÁÉµÌô¹ÜUI1MÉ¡AÉµÌ¡Ý¥¹½Ü¹±½Ñ¥½¸¹ÍÉ ¤ì(½¹ÍÐ¹µôÁÉµÌ¹Ð ¹µ¤ì(¥¡¹µ¤ì(½Õµ¹Ð¹Ñ±µ¹Ñ	å% ¹µ%¹ÁÕÐ¤¹Ù±Õô¹µì(ÕÉ¹¤ ¤ì(ô)ô¤ì()½Õµ¹Ð¹Ñ±µ¹Ñ	å% ¹µ%¹ÁÕÐ¤¹Ù¹Ñ1¥ÍÑ¹È ­å½Ý¸°ôøì(¥¡¹­äôôô¹ÑÈ¤ÕÉ¹¤ ¤ì)ô¤ì(ð½ÍÉ¥ÁÐø(ð½½äø(ð½¡Ñµ°ø(>
+        <dt>Q. ひらがな・カタカナ・漢字、どれで入力すればいいですか？</dt>
+        <dd>どの文字でも占えます。ただし「たろう」と「タロウ」と「太郎」は別の結果になります。</dd>
+      </div>
+    </dl>
+  </div>
+
+  <footer>※この占いは娯楽目的です。結果を保証するものではありません。</footer>
+</div>
+
+<script>
+// --- データ定義 ---
+const ranks = [
+  { name: '大吉', cls: 'rank-daikichi', messages: [
+    'あなたの名前には強い光が宿っています。今こそ大きな一歩を踏み出す時。周りの人があなたの魅力に引き寄せられるでしょう。',
+    '名前が示すように、あなたには特別なエネルギーがあります。チャンスの波に乗って、夢を現実にしていきましょう。',
+    '素晴らしい運気があなたを包んでいます。自信を持って行動することで、予想以上の結果が待っています。'
+  ]},
+  { name: '中吉', cls: 'rank-chukichi', messages: [
+    'あなたの名前は安定した幸運を持っています。コツコツと積み重ねた努力が、今確かな形になってきています。',
+    '着実に前進するあなた。名前の持つ豊かな力が、良い縁と幸運を引き寄せています。焦らず進みましょう。',
+    'バランスの取れた運気です。人との繋がりを大切にすることで、さらに運が開けていくでしょう。'
+  ]},
+  { name: '吉', cls: 'rank-kichi', messages: [
+    'あなたの名前には誠実さと温かさが宿っています。その魅力が周囲をほっとさせ、良い縁を引き寄せています。',
+    '穏やかで確かな幸運があります。日常の小さな幸せに気づくことで、より豊かな毎日になるでしょう。',
+    '名前の力があなたを守っています。素直な気持ちで行動することで、良いことが次々と起きるでしょう。'
+  ]},
+  { name: '小吉', cls: 'rank-shokichi', messages: [
+    '小さな幸運が積み重なる運気です。焦らずに、一つ一つを丁寧にこなすことで大きな成果につながります。',
+    'じっくりと実力を蓄える時期。名前の持つ内なる力を信じて、自分らしくいることが開運の鍵です。',
+    '地道な努力が実を結ぶ予感。周りへの感謝を忘れずにいることで、思わぬ良いことが舞い込みます。'
+  ]},
+  { name: '末吉', cls: 'rank-suekichi', messages: [
+    '今は準備期間。名前の持つ潜在的な力が今後ゆっくりと開花していきます。今の頑張りは必ず報われます。',
+    'これから運気が上昇していく予兆があります。新しいことへの挑戦を恐れずに、一歩踏み出してみましょう。',
+    '焦らず、マイペースで進むことが開運のポイント。あなたの名前が持つ誠実さが、いずれ大きな実を結びます。'
+  ]},
+  { name: '凶', cls: 'rank-kyo', messages: [
+    '少し立ち止まって考える時期かもしれません。でも名前の力はあなたの味方。慎重に行動することで道は開けます。',
+    '試練の時ですが、それはあなたが成長するためのステップ。名前の持つ強さを信じて、前を向きましょう。',
+    '今は耐える時。無理に動かず、英気を養うことが大切です。嵐の後には必ず晴れ間が訪れます。'
+  ]}
+];
+
+const luckyColors = [
+  { name: 'ゴールド', hex: '#ffd700' },
+  { name: 'ラベンダー', hex: '#c9a8ff' },
+  { name: 'サクラ', hex: '#ffb7c5' },
+  { name: 'ミント', hex: '#98e4c9' },
+  { name: 'スカイブルー', hex: '#87ceeb' },
+  { name: 'コーラル', hex: '#ff7f7f' },
+  { name: 'サンセット', hex: '#ff8c42' },
+  { name: 'エメラルド', hex: '#50c878' },
+  { name: 'ローズ', hex: '#e8a0bf' },
+  { name: 'インディゴ', hex: '#8b6be8' },
+];
+
+const luckyItems = ['🌸','⭐','🍀','🌙','💎','🔑','🌺','🦋','🌈','🎯','🏅','🎋','🌟','💫','🎀'];
+
+const messages = [
+  'あなたの笑顔が、周りの人を幸せにする力を持っています。',
+  '今日は直感を信じて。あなたの第六感が正しい道を示してくれます。',
+  '小さな親切が大きな縁を生む日。人に優しくすることで運気がアップします。',
+  'チャレンジする勇気を持ちましょう。失敗を恐れない心が開運の鍵です。',
+  '感謝の気持ちを忘れずに。ありがとうの言葉が幸運を引き寄せます。',
+  '新しい出会いに期待して。素敵な縁がすぐそこまで来ています。',
+  '自分を信じる力があなたの武器。自信を持って一歩踏み出しましょう。',
+  '休むことも大切な開運行動。心と体を整えることで運気が整います。',
+  '好奇心を大切に。興味を持ったことに積極的に飛び込んでみましょう。',
+  'あなたの個性が輝く日。自分らしくいることが最大の魅力になります。',
+];
+
+// --- ハッシュ関数（名前から安定した数値を生成） ---
+function hashName(name) {
+  let h = 0;
+  for (let i = 0; i < name.length; i++) {
+    h = Math.imul(31, h) + name.charCodeAt(i) | 0;
+  }
+  return Math.abs(h);
+}
+
+function seededRand(seed, max) {
+  let s = (seed * 1664525 + 1013904223) & 0xffffffff;
+  return Math.abs(s) % max;
+}
+
+function starsHtml(n) {
+  return '★'.repeat(n) + '☆'.repeat(5 - n);
+}
+
+// --- 占い実行 ---
+function uranai() {
+  const name = document.getElementById('nameInput').value.trim();
+  if (!name) {
+    document.getElementById('nameInput').focus();
+    document.getElementById('nameInput').style.borderColor = '#e91e8c';
+    setTimeout(() => { document.getElementById('nameInput').style.borderColor = ''; }, 1000);
+    return;
+  }
+
+  const h = hashName(name);
+
+  // 総合運（6段階）
+  const rankIdx = seededRand(h, 6);
+  const rank = ranks[rankIdx];
+  const msgIdx = seededRand(h + 1, rank.messages.length);
+
+  // 各運勢（1〜5星）
+  const renai  = (seededRand(h + 10, 5) + 1);
+  const kin    = (seededRand(h + 20, 5) + 1);
+  const benkyo = (seededRand(h + 30, 5) + 1);
+  const kenko  = (seededRand(h + 40, 5) + 1);
+
+  // ラッキー
+  const color  = luckyColors[seededRand(h + 50, luckyColors.length)];
+  const number = seededRand(h + 60, 9) + 1;
+  const item   = luckyItems[seededRand(h + 70, luckyItems.length)];
+  const luckyMsg = messages[seededRand(h + 80, messages.length)];
+
+  // 結果を表示
+  document.getElementById('resultName').textContent = name;
+  document.getElementById('sogoRank').innerHTML = `<span class="${rank.cls}">${rank.name}</span>`;
+  document.getElementById('sogoMessage').textContent = rank.messages[msgIdx];
+  document.getElementById('renaiStars').textContent = starsHtml(renai);
+  document.getElementById('kinStars').textContent = starsHtml(kin);
+  document.getElementById('benkyoStars').textContent = starsHtml(benkyo);
+  document.getElementById('kenkoStars').textContent = starsHtml(kenko);
+  document.getElementById('luckyColorSwatch').style.background = color.hex;
+  document.getElementById('luckyColor').textContent = color.name;
+  document.getElementById('luckyNumber').textContent = number;
+  document.getElementById('luckyItem').textContent = item;
+  document.getElementById('luckyMessage').textContent = luckyMsg;
+
+  // URLにパラメータを追加（シェア用）
+  const url = new URL(window.location.href);
+  url.searchParams.set('name', name);
+  window.history.replaceState({}, '', url);
+
+  document.getElementById('result').style.display = 'block';
+  document.getElementById('result').scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+function clearResult() {
+  document.getElementById('nameInput').style.borderColor = '';
+}
+
+function resetForm() {
+  document.getElementById('result').style.display = 'none';
+  document.getElementById('nameInput').value = '';
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+  const url = new URL(window.location.href);
+  url.searchParams.delete('name');
+  window.history.replaceState({}, '', url);
+}
+
+function shareTwitter() {
+  const name = document.getElementById('resultName').textContent;
+  const rank = document.getElementById('sogoRank').textContent;
+  const url = window.location.href;
+  const text = `【名前占い】「${name}」の総合運は「${rank}」でした！
+あなたの名前も占ってみて👇
+${url}`;
+  window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(text), '_blank');
+}
+
+function copyResult() {
+  navigator.clipboard.writeText(window.location.href).then(() => {
+    const btn = document.getElementById('copyBtn');
+    btn.textContent = '✅ コピーしました';
+    setTimeout(() => { btn.textContent = '🔗 URLをコピー'; }, 2000);
+  });
+}
+
+// URLパラメータから自動実行
+window.addEventListener('load', () => {
+  const params = new URLSearchParams(window.location.search);
+  const name = params.get('name');
+  if (name) {
+    document.getElementById('nameInput').value = name;
+    uranai();
+  }
+});
+
+document.getElementById('nameInput').addEventListener('keydown', e => {
+  if (e.key === 'Enter') uranai();
+});
+</script>
+</body>
+</html>
